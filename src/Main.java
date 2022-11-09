@@ -5,23 +5,18 @@ import static java.lang.Integer.parseInt;
 
 public class Main {
 
-
 //        1
 //        Необходимо реализовать программу, которая будет считывать
 //        строки, введенные пользователем и выводить их в консоль.
 //
     public static void main(String[] args) throws Exception {
-        Scanner scanner = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
         while (true) {
-            System.out.println("Type any string");
-            if (scanner.hasNextLine()) {
-                System.out.println("You enter string: " + scanner.nextLine());
-                break;
+            System.out.println("Enter any string:");
+            String A = in.next();
+                System.out.println("You enter string: " + A);
             }
-            scanner.next();
-        }
-        scanner.close();
-      }
+    }
 
 
 //        2
